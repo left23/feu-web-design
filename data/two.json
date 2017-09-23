@@ -1,0 +1,66 @@
+{
+  "class": "two",
+  "title": "Speakers",
+  "subtitle": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "date": "Join us June 1-2<sup>nd</sup>",
+  "location": "Utrecht, Netherlands",
+  "speakers__keynote" : [
+    {
+      "name": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Vivamus Magna Justo",
+      "title": "CSS and Accessibility",
+      "image": "http://via.placeholder.com/150x150"
+    }
+  ],
+  "speakers" : [
+    {
+      "name": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Vivamus Magna Justo",
+      "title": "CSS and Accessibility",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150"
+    },
+    {
+      "name": "Vivamus Magna Justo",
+      "title": "CSS and Accessibility",
+      "image": "http://via.placeholder.com/150x150"
+    }
+  ]
+}

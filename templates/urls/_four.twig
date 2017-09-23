@@ -1,0 +1,26 @@
+{% extends '../_layout.twig' %}
+
+{% block body %}
+<body class="{{ four.class }}">
+<div class="background-image background-image-{{ four.class }}"></div>
+{% endblock %}
+
+  {% block hero %}
+
+    <div class="hero {{ four.class }}">
+
+      <div class="hero__bgimage-overlay"></div>
+
+      <div class="hero__shape">
+
+        <div class="container">
+          <h1>{{ four.title }}</h1>
+          <h3>{{ four.subtitle }}</h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  {% endblock %}

@@ -1,0 +1,64 @@
+{% extends '../_layout.twig' %}
+
+{% block body %}
+<body class="{{ two.class }}">
+<div class="background-image background-image-{{ two.class }}"></div>
+{% endblock %}
+
+  {% block hero %}
+
+    <div class="hero {{ two.class }}">
+
+      <div class="hero__bgimage-overlay"></div>
+
+      <div class="hero__shape">
+
+        <div class="container">
+          <h1>{{ two.title }}</h1>
+          <h3>{{ two.subtitle }}</h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  {% endblock %}
+
+
+  {% block content %}
+
+    <main class="container speakers speakers__keynote">
+
+      <div class="grid grid-33">
+
+      {% for speaker in two.speakers__keynote %}
+          <div class="speaker__keynote grid-item">
+            <h2>{{ speaker.title }}</h2>
+            <img src="{{ speaker.image }}">
+            <h3>{{ speaker.name }}</h3>
+          </div>
+      {% endfor %}
+      </div>
+
+
+    <section class="container speakers speakers__other">
+
+      <div class="grid grid-25">
+
+      {% for speaker in two.speakers %}
+          <div class="speaker__other grid-item">
+            <h2>{{ speaker.title }}</h2>
+            <img src="{{ speaker.image }}">
+            <h3>{{ speaker.name }}</h3>
+          </div>
+      {% endfor %}
+      </div>
+
+    </section>
+
+
+    </main>
+
+
+{% endblock %}

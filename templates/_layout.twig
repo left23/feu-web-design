@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="Frontend United | Utrecht 2018">
+    <title>Frontend United | Utrecht 2018</title>
+    <meta property="og:title" content="Frontend United | Utrecht 2018" />
+    <meta property="og:description" content="Frontend United | Utrecht 2018" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.frontendunited.org" />
+    <meta property="og:image" content="http://www.frontendunited.org/assets/images/logo-2018.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon.png" sizes="32x32">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+  </head>
+  {% block body %}
+  <body class="{{ home.class }}">
+  <div class="background-image background-image-{{ home.class }}"></div>
+  {% endblock %}
+
+
+  {% block header %}
+
+    <header class="site-header navbar-fixed-top" id="top">
+      <div class="container">
+
+        {% block nav %}
+
+          <nav>
+            <ul class="navbar">
+                {% for item in home.navigation %}
+
+                  {% if loop.first %}
+                    <li class="nav-item navbar-brand">
+                      <a class="navbar-logo" href="/_index.html" title="Home" rel="home">
+                        <img src="/assets/images/logo-2018.svg" alt="frontend united logo" />
+                      </a>
+                      <a class="navbar-logo mobile" href="/_index.html" title="Home" rel="home">
+                        <img src="/assets/images/logo-white.svg" alt="frontend united logo" />
+                      </a>
+                    </li>
+                  {% endif %}
+
+                  <li class="nav-item">
+                    <a href="/_{{ item.id }}.html" class="nav-link" title="{{ item.title }}">{{ item.title }}</a>
+                  </li>
+                {% endfor %}
+            </ul>
+          </nav>
+
+        {% endblock %}
+
+      </div>
+    </header>
+
+  {% endblock %}
+
+  {% block hero %}
+
+      <div class="hero {{ home.class }}">
+
+        <div class="hero__bgimage-overlay"></div>
+
+        <div class="hero__shape">
+
+          <div class="container">
+            <h1>{{ home.title }}</h1>
+
+            <h2>{{ home.date }}<br>{{ home.location }}</h2>
+
+          </div>
+
+        </div>
+
+      </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+    <main id="content" class="container">
+
+      <div class="grid grid-33 grid-double">
+
+        <section class="main grid-item">
+          <h2>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</h2><p> Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.</p><p>
+
+            Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p><p>
+
+            Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+        </section>
+
+        <aside class="sidebar grid-item">
+          sidebar
+        </aside>
+
+      </div>
+    </main>
+
+  {% endblock %}
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__container">
+
+          <!--div class="fixed-logo">
+
+            <svg viewBox="0 0 168 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Group" fill="white">
+                  <path d="M84.154,13.924 C45.301,13.924 13.692,45.532 13.692,84.385 C13.692,123.238 45.301,154.846 84.154,154.846 C123.007,154.846 154.615,123.238 154.615,84.385 C154.615,45.532 123.007,13.924 84.154,13.924 Z M84.154,168 C38.048,168 0.539,130.49 0.539,84.385 C0.539,38.281 38.048,0.771 84.154,0.771 C130.259,0.771 167.768,38.281 167.768,84.385 C167.768,130.49 130.259,168 84.154,168 L84.154,168 Z" id="Fill-20"></path>
+                  <polyline id="Fill-21" points="58.71 41.306 121.255 41.306 121.255 63.252 82.713 63.252 82.713 80.122 118.512 80.122 118.512 102.068 82.713 102.068 82.713 131.146 58.71 131.146 58.71 41.306"></polyline>
+                </g>
+              </g>
+            </svg>
+
+          </div-->
+
+            <div class="grid grid-33">
+
+              <div class="grid-item">
+                <form>
+                  <h3>Subscribe to our mailing list</h3>
+                  <input placeholder="Enter email address">
+                  <button class="btn btn--orange btn--small">Subscribe</button>
+                </form>
+              </div>
+
+
+              <div class="grid-item">
+                <h3>Contact us</h3>
+                <ul class="menu">
+                  <li>
+                    <a href="https://twitter.com/frontendunited">@FrontendUnited</a>
+                  </li>
+                  <li>
+                     <a href="https://twitter.com/intent/tweet?button_hashtag=fuGhent">#fuGhent</a>
+                  </li>
+                  <li>
+                     <a href="mailto:info@frontendunited.org">info@frontendunited.org</a>
+                  </li>
+              </div>
+
+
+              <div class="grid-item">
+                <h3>Useful links</h3>
+                <ul class="menu">
+                  <li>
+                    <a href="/about" class="about-frontend-united">About Frontend United</a>
+                  </li>
+                  <li>
+                    <a href="/code-of-conduct" class="code-of-conduct">Code of conduct</a>
+                  </li>
+                  <li>
+                    <a href="/terms-and-conditions" class="terms--conditions">Terms &amp; conditions</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/drupal-frontend/feu2015/raw/gh-pages/files/Sponsordoc_feuGhent2016.pdf" class="want-to-sponsor-us">Want to sponsor us?</a>
+                  </li>
+                </ul>
+              </div>
+
+          </div>
+
+          <div class="copyright">
+            <p>© Frontend United 2018</p>
+          </div>
+
+        </div>
+      </div>
+  </footer>
+
+
+  <img class="camera-icon" src="/assets/images/camera.svg" alt="camera" />
+  <!--div class="pop-up">Photo: Utrecht June 2015 by Fred Flinstone. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus</div-->
+
+  </div>
+  </body>
+</html>

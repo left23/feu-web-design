@@ -1,0 +1,94 @@
+@import "settings";
+
+body {
+  background-color: #DF5336;
+  position: relative;
+}
+
+body.one {
+  background-color: #6D2A79;
+}
+
+body.two {
+  background-color: #6EC82C;
+}
+
+body.three {
+  background-color: #625A8A;
+}
+
+body.four {
+  background-color: #4EB9F7;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @include medium {
+    max-width: 1024px;
+  }
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .container {
+  justify-content: flex-end;
+}
+
+main.container {
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 3;
+  margin-top: -18rem;
+
+  @include medium {
+    padding: 1rem 3rem 3rem 4rem;
+    min-height: 100%;
+    min-height: calc(100vh - 50px);
+  }
+}
+
+.main {
+  text-align: left;
+  padding: 1rem 2rem;
+  @include medium {
+    padding: 2rem;
+  }
+}
+
+
+.main {
+  background-color: white;
+
+  @include medium {
+    padding: 10rem 4rem 6rem 11rem;
+    background-color: transparent;
+    background-image: url(/assets/images/shape.svg);
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.sidebar {
+
+  background-color: white;
+  margin: 0 0 2rem;
+
+  @include medium {
+    background-color: transparent;
+    background-image: url(/assets/images/shape.svg);
+    background-position: 100% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+    padding: 6rem 4rem 6rem 2rem;
+    min-height: 90vh;
+  }
+}

@@ -1,0 +1,215 @@
+@import 'settings';
+
+.background-image {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-image: url(/assets/images/dom.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+
+  @media (orientation: landscape) {
+    background-size: 100% auto;
+  }
+
+  @media (orientation: portrait) {
+    background-size: auto 100%;
+  }
+
+  &.background-image-one {
+    background-image: url(/assets/images/bedrijfsuitje-utrecht.jpg);
+  }
+
+  &.background-image-two {
+    background-image: url(/assets/images/architecture.jpg);
+  }
+
+  &.background-image-three {
+    background-image: url(/assets/images/buildings.jpg);
+  }
+
+  &.background-image-four {
+    background-image: url(/assets/images/windows.jpg);
+  }
+
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-top: $navbar-height;
+  align-items: flex-end;
+
+  @include small {
+    height: 80vh;
+    display: flex;
+  }
+
+  @include medium {
+    height: 90vh;
+    align-items: flex-start;
+  }
+
+  @include large {
+    height: 90vh;
+    align-items: flex-start;
+  }
+
+
+  .container {
+    margin-top: 0rem;
+    padding: 0 2rem;
+    text-align: left;
+    color: white;
+    top: 0;
+
+    @include small {
+      padding: 0 4rem;
+    }
+
+    @include medium {
+      margin-top: -10rem;
+      padding: 0 8rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: left;
+      margin-top: 3rem;
+      text-shadow: 4px 4px 0 $brand-primary;
+      padding-top: 4rem;
+
+      @include small {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      @include medium {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      @include large {
+        text-align: left;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+      margin-top: 2rem;
+      padding: 0;
+      font-size: 2rem;
+      text-align: left;
+      text-shadow: 4px 4px 0 $brand-primary;
+
+      @include small {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      @include large {
+        text-align: left;
+      }
+
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-top: 1rem;
+      padding: 0;
+      text-align: left;
+      text-shadow: 2px 2px 0 $brand-primary;
+
+      @include small {
+        font-size: 2.25rem;
+        margin-top: 4rem;
+        text-align: center;
+      }
+
+      @include large {
+        text-align: left;
+      }
+
+    }
+
+
+  }
+
+}
+
+.hero__bgimage-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  @include gradient-diagonal;
+  z-index: 1;
+}
+
+.hero__shape {
+  position: relative;
+  margin-top: $navbar-height;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  opacity: 1;
+  background-position: 50% 105%;
+  background-size: 100% auto;
+  background-image: url(/assets/images/dom.svg);
+  background-repeat: no-repeat;
+
+  @include small {
+    padding-top: 10vh;
+    margin-top: 0;
+    height: 90vh;
+  }
+  @include medium {
+    height: 100%;
+    padding-top: 20vh;
+    margin-top: 0;
+    background-position: 50% 100%;
+  }
+  @include large {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20vh;
+    margin-top: 0;
+    background-position: 50% 40vh;
+  }
+}
+
+.one .hero__shape {
+  opacity: 0.9;
+  background-image: url(/assets/images/bg-canal.svg);
+}
+
+.two .hero__shape {
+  opacity: 0.9;
+  background-image: url(/assets/images/bg-architecture.svg);
+}
+
+.three .hero__shape {
+  opacity: 0.9;
+  background-image: url(/assets/images/bg-buildings.svg);
+}
+
+.four .hero__shape {
+  opacity: 0.9;
+  background-image: url(/assets/images/bg-windows.svg);
+}
+
+.hero__shape > .container {
+  opacity: 1;
+}

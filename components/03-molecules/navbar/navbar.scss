@@ -1,0 +1,185 @@
+@import 'settings';
+
+.site-header {
+  position: relative;
+  margin-bottom: 1rem;
+  background: rgba($brand-primary, 1);
+
+  @include small {
+    min-height: $navbar-height;
+  }
+
+  .navbar-logo {
+    display: none;
+
+    &.mobile {
+      display: block;
+    }
+
+    @include medium {
+      display: block;
+
+      &.mobile {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+.navbar-fixed-top {
+  @include z-depth-3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+
+  @include small {
+    height: $navbar-height;
+  }
+}
+
+nav,
+.navbar {
+  width: 100%;
+  @include small {
+    height: $navbar-height;
+  }
+}
+
+.navbar-header,
+nav,
+.navbar {
+  display: flex;
+}
+
+
+.navbar-logo {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+
+  @include small {
+    margin-left: -10px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+    pointer-events: none;
+    margin-left: 0;
+    max-width: 200px;
+
+    @include small {
+      height: $navbar-height;
+    }
+
+  }
+
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+
+  @include small {
+    justify-content: space-around;
+    flex-flow: row nowrap;
+  }
+
+  .nav-item {
+
+    flex-basis: 33%;
+
+    @include small {
+      flex-basis: 33%;
+    }
+
+    @include medium {
+      flex-basis: 20%;
+    }
+
+    &.navbar-brand {
+      position: relative;
+      padding: 1rem 0 0 1rem;
+
+      @include small {
+        padding: 0.5rem 0 0.5rem 2rem;
+      }
+
+      @include medium {
+        padding: 20px 0 0;
+        order: 3;
+        background-color: transparent;
+        &::after {
+          position: absolute;
+          content: "";
+          border-bottom: 7rem solid white;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          height: 0;
+          width: 300px;
+          top: 0;
+          left: -50px;
+          transform: rotate(180deg);
+          z-index: -1;
+        }
+      }
+    }
+
+    @include medium {
+      &:nth-child(2) {
+        order: 1;
+      }
+
+      &:nth-child(3) {
+        order: 2;
+        padding-right: 1rem;
+      }
+
+      &:nth-child(4) {
+        order: 4;
+        padding-left: 1rem;
+      }
+
+      &:nth-child(5) {
+        order: 5;
+      }
+    }
+
+  }
+
+  .nav-link {
+    font-weight: bold;
+    color: $brand-primary;
+    color: white;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    text-align: center;
+    text-shadow: 3px 3px 0 $brand-tertiary;
+
+    @include medium {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      color: $brand-secondary;
+    }
+  }
+
+}

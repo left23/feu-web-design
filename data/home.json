@@ -1,0 +1,25 @@
+{
+  "class": "home",
+  "title": "A non-profit, developer-first, community-focused conference.",
+  "date": "June 1-2<sup>nd</sup>",
+  "location": "Utrecht, Netherlands",
+  "navigation" : [
+    {
+      "id": "one",
+      "title": "Sessions"
+    },
+    {
+      "id": "two",
+      "title": "Speakers"
+    },
+    {
+      "id": "three",
+      "title": "Sponsors"
+    },
+    {
+      "id": "four",
+      "title": "Venue"
+    }
+  ]
+
+}
