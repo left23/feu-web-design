@@ -11,7 +11,7 @@
   background-position: 50% 0;
   background-repeat: no-repeat;
   text-align: center;
-  background-image: url(/assets/images/dom.jpg);
+  background-image: url(/assets/images/Utrecht-Dom-Tower-Water-Terrace-Canal-Netherlands.jpg);
   background-attachment: fixed;
   background-size: cover;
 
@@ -24,19 +24,19 @@
   }
 
   &.background-image-one {
-    background-image: url(/assets/images/bedrijfsuitje-utrecht.jpg);
+    background-image: url(/assets/images/Hans-Splinter-open-monumentendag-2014.jpg);
   }
 
   &.background-image-two {
-    background-image: url(/assets/images/architecture.jpg);
+    background-image: url(/assets/images/Window-Utrecht-University.jpg);
   }
 
   &.background-image-three {
-    background-image: url(/assets/images/buildings.jpg);
+    background-image: url(/assets/images/Channel-Cycle-Utrecht-Holland-House.jpg);
   }
 
   &.background-image-four {
-    background-image: url(/assets/images/windows.jpg);
+    background-image: url(/assets/images/Netherlands-Utrecht-Building-Street-Architecture.jpg);
   }
 
 }
@@ -62,7 +62,6 @@
     height: 90vh;
     align-items: flex-start;
   }
-
 
   .container {
     margin-top: 0rem;
@@ -142,7 +141,6 @@
 
     }
 
-
   }
 
 }
@@ -167,7 +165,7 @@
   opacity: 1;
   background-position: 50% 105%;
   background-size: 100% auto;
-  background-image: url(/assets/images/dom.svg);
+  background-image: url(/assets/images/bg-dom.svg);
   background-repeat: no-repeat;
 
   @include small {

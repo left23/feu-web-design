@@ -1,8 +1,7 @@
-$base-color:            #222;
-
 $brand-primary:         #323C4B;
 $brand-secondary:       #DF5336;
 $brand-tertiary:        darken($brand-primary, 6%);
+$base-colour:           darken(#323C4B, 10%);
 
 // Basics of a navbar
 $navbar-height:         5rem;
