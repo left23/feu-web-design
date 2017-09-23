@@ -267,7 +267,6 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', ['build', 'browser-sync'],function(){
   gulp.watch(options.theme.components + '**/*.scss', ['styles']);
   gulp.watch(options.theme.components + '**/*.js', ['js-watch']);
-  gulp.watch(options.theme.components + '**/*.svg', ['icons-watch']);
   gulp.watch(options.theme.images + '**/*', ['images']);
   gulp.watch([options.theme.templates + '**/*', options.theme.data + '/*.json'],['twig-watch']);
 });
@@ -315,53 +314,4 @@ gulp.task('clean:images', function () {
 // ##################
 
 // Before deploying create a fresh build
-gulp.task('build', ['styles', 'js', 'js-process', 'twig', 'sprite-icons', 'image-icons', 'images', 'font']);
-
-
-// ######################
-// Deploy
-// ######################
-//
-// We use rsync to publish the style guide online
-// ===================================================
-
-var rsync         = require('gulp-rsync'),
-    prompt        = require('gulp-prompt');
-
-try {
-    var deploy    = require('./deploy_config.json');
-  } catch(error) {
-    console.log('Deploy config file missing');
-  }
-
-// Before deploying create a fresh build
-gulp.task('deploy', ['build'], function() {
-
-  // Default options for rsync
-  var rsyncConf = {
-    progress: true,
-    incremental: true,
-    emptyDirectories: true
-    //clean: true,
-  };
-
-  // Load the settings from our deploy_config.json file
-  // This file can be made from the deploy_config-example.json
-  // and should be in gitignore
-  rsyncConf.hostname = deploy.hostname; // hostname
-  rsyncConf.username = deploy.username; // ssh username
-  rsyncConf.destination = deploy.destination; // path where uploaded files go
-  rsyncConf.root = options.theme.build;
-
-  // Use gulp-rsync to sync the files
-  // and perform a final check before pushing
-  return gulp.src(options.theme.build + '/**/*')
-    .pipe(
-      prompt.confirm({
-        message: 'Heads Up! Are you SURE you want to push to PRODUCTION?',
-        default: false
-      })
-    )
-    .pipe(rsync(rsyncConf));
-
-});
+gulp.task('build', ['styles', 'js', 'js-process', 'twig', 'images']);
