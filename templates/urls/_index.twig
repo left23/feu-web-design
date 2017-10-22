@@ -5,23 +5,24 @@
 <div class="background-image background-image-{{ home.class }}"></div>
 {% endblock %}
 
-  {% block hero %}
+{% block hero %}
 
-    <div class="hero {{ home.class }}">
+  <div class="hero {{ home.class }}">
 
-      <div class="hero__bgimage-overlay"></div>
+    <div class="hero__bgimage-overlay"></div>
 
-      <div class="hero__shape">
+    <div class="hero__shape">
 
-        <div class="container">
+      <div class="container">
 
-          <h1>{{ home.date }}<br>{{ home.location }}</h1>
-          <h3>{{ home.title }}</h3>
-
-        </div>
+        <h1>{{ home.date }}<br>{{ home.location }}</h1>
+        <h3>{{ home.title }}</h3>
 
       </div>
 
     </div>
 
-  {% endblock %}
+  </div>
+
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{% if speaker.url %}
+  <a href="/_speaker.html" class="speaker__other">
+    {% else %}
+  <div class="speaker__other speaker__details">
+{% endif %}
+<h2>{{ speaker.title }}</h2>
+  {% if speaker.keynote %}
+    <div class="keynote-label">{{ speaker.keynote }}</div>
+  {% endif %}
+  <img src="{{ speaker.image }}">
+  <h3>{{ speaker.name }}</h3>
+  {% if speaker.job %}
+    <h4>{{ speaker.job }}</h4>
+  {% endif %}
+  {% if speaker.website %}
+    <a title="external-link" class="speaker__website"><h5>{{ speaker.website }}</h5></a>
+  {% endif %}
+{% if speaker.url %}
+  </a>
+    {% else %}
+  </div>
+{% endif %}

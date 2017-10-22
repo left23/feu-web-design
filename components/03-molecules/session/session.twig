@@ -1,0 +1,21 @@
+{% if session.video %}
+  <a href="/_session.html" class="session__other">
+    {% else %}
+  <div class="session__other session__details">
+{% endif %}
+  {% if not session.video %}
+    <h2>{{ session.title }}</h2>
+  {% endif %}
+  {% if session.keynote %}
+    <div class="keynote-label">{{ session.keynote }}</div>
+  {% endif %}
+  <img src="{{ session.image }}">
+  <h3>{{ session.speaker }}</h3>
+  {% if session.video %}
+    <a title="external-link" class="session__website"><h5>{{ session.website }}</h5></a>
+  {% endif %}
+{% if session.video %}
+  </a>
+    {% else %}
+  </div>
+{% endif %}

@@ -16,11 +16,7 @@
     <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
     <link rel="stylesheet" href="/assets/css/all.min.css">
   </head>
-  {% block body %}
-  <body class="{{ home.class }}">
-  <div class="background-image background-image-{{ home.class }}"></div>
-  {% endblock %}
-
+  <body class="session">
 
   {% block header %}
 
@@ -58,149 +54,33 @@
 
   {% endblock %}
 
-  {% block hero %}
-
-      <div class="hero {{ home.class }}">
-
-        <div class="hero__bgimage-overlay"></div>
-
-        <div class="hero__shape">
-
-          <div class="container">
-            <h1>{{ home.title }}</h1>
-
-            <h2>{{ home.date }}<br>{{ home.location }}</h2>
-
-          </div>
-
-        </div>
-
-      </div>
-
-  {% endblock %}
-
   {% block content %}
 
     <main id="content" class="container">
 
-      <div class="grid grid-100">
+      <div class="session-node grid grid-33 grid-double">
 
-        <section class="main grid-item">
-          <h2>Why Utrecht?</h2>
-          <p>Because Utrecht is one of the happiest places to be! The city embodies, ‘gezelligheid’, the core of Dutch culture. With its medieval centre, gabled merchants’ houses and cosmopolitan student population, Utrecht offers a laid-back alternative to Amsterdam. Unlike any other inner-canal city in the world, Utrecht has wharfs. The wharfs lead on to traditional cellars that have mostly been adapted to serve as bars and restaurants, which create wonderful café-lined canals. Utrecht is a slice of bohemia: a haven for everyone and anyone. No wonder Utrecht is nominated for European City of the Year Award 2018!
+        <div class="grid-item">
+
+          <h2>{{ session.title }}</h2>
+
+          {% if session.theme %}
+            <div class="theme-label">{{ session.theme }}</div>
+          {% endif %}
+
+          <p>Blurb about the session goes here. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
           </p>
-        </section>
+
+        </div>
+
+        <aside class="grid-item">
+          {% include '../components/03-molecules/session/session.twig' %}
+        </aside>
 
       </div>
     </main>
 
   {% endblock %}
-
-
-  {% block speakers %}
-
-    <section class="speakers speakers__keynote">
-      <div class="speakers-content__container">
-
-        <h2 class="speakers-block-title">Speakers</h2>
-
-        <div class="grid grid-25">
-
-          {% for speaker in home.speakers__keynote %}
-            {% include '../components/03-molecules/speaker/speaker-keynote.twig' %}
-          {% endfor %}
-
-        </div>
-
-      </div>
-    </section>
-
-  {% endblock %}
-
-
-  {% block quick_links %}
-
-    <section class="quick-links">
-        <div class="container">
-          <div class="quick-links__container">
-
-            <div class="grid grid-33">
-
-              <div class="grid-item">
-                <h3>Schedule</h3>
-                <img src="{{ home.image }}">
-              </div>
-
-              <div class="grid-item">
-                <h3>Speakers</h3>
-                <img src="{{ home.image }}">
-              </div>
-
-              <div class="grid-item">
-                <h3>Venue</h3>
-                <img src="{{ home.image }}">
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-    </section>
-
-  {% endblock %}
-
-
-
-  {% block sponsors %}
-
-    <section class="sponsors-block">
-        <div class="container">
-          <div class="sponsors-block__container">
-
-            <h2 class="sponsors-block-title">Sponsors</h2>
-
-            <section class="sponsors sponsors-gold">
-
-              <div class="grid grid-100">
-
-                {% for sponsor in home.sponsors__gold %}
-                  {% include '../components/03-molecules/sponsor/sponsor-gold.twig' %}
-                {% endfor %}
-
-              </div>
-
-            </section>
-
-            <section class="sponsors sponsors-silver">
-
-              <div class="grid grid-50">
-
-                {% for sponsor in home.sponsors__silver %}
-                  {% include '../components/03-molecules/sponsor/sponsor-silver.twig' %}
-                {% endfor %}
-
-              </div>
-
-            </section>
-
-            <section class="sponsors">
-
-              <div class="grid grid-33">
-
-                {% for sponsor in home.sponsors %}
-                  {% include '../components/03-molecules/sponsor/sponsor.twig' %}
-                {% endfor %}
-
-              </div>
-
-            </section>
-
-          </div>
-        </div>
-    </section>
-
-  {% endblock %}
-
 
   <footer class="site-footer">
       <div class="container">

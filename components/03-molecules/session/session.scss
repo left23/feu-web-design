@@ -1,6 +1,6 @@
 @import 'settings';
 
-.speakers__keynote {
+.sessions__keynote {
   max-width: 1600px;
   margin: 0 auto;
   background-position: 0 50%;
@@ -8,14 +8,6 @@
   background-repeat: no-repeat;
   background-image: url(/assets/images/keynote-bg.svg);
   padding: 0 2rem;
-
-  .speakers-block-title {
-    text-align: center;
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-shadow: 4px 4px 0 $brand-primary;
-  }
 
   > .grid {
     padding: 0;
@@ -39,7 +31,7 @@
     }
   }
 
-  .speaker__keynote {
+  .session__keynote {
     background-position: 0 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -160,7 +152,7 @@
 }
 
 
-.speakers__other {
+.sessions__other {
   max-width: 1200px;
   margin: 0 auto;
 
@@ -176,7 +168,7 @@
 
 }
 
-.speaker__other {
+.session__other {
   text-align: center;
   padding: 2rem 1rem 1rem;
   margin-bottom: 2rem;
@@ -224,36 +216,15 @@
 
 }
 
-.speaker__details {
+.session-node {
 
-  h2 {
-    margin-bottom: 1rem;
+  .theme-label {
+    background-color: lighten($brand-primary, 20%);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    display: inline-block;
   }
 
-  h4, h5 {
-    margin: 0 0 0.5rem;
-  }
-
-  .speaker__other {
-    background-color: transparent;
-  }
-
-  img {
-    border-radius: 100%;
-    width: 160px;
-    height: 160px;
-    margin: 1rem auto 0;
-    z-index: 1;
-    border: 4px solid $brand-secondary;
-    padding: 2px;
-  }
-
-}
-
-.keynote-label {
-  background-color: $brand-secondary;
-  color: white;
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
 }

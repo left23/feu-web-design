@@ -1,0 +1,83 @@
+{
+  "class": "sessions-body",
+  "title": "Sessions",
+  "subtitle": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "date": "June 1-2<sup>nd</sup>",
+  "location": "Utrecht, Netherlands",
+  "sessions__keynote" : [
+    {
+      "speaker": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Vivamus Magna Justo",
+      "title": "CSS and Accessibility",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Nulla porttitor accumsan",
+      "title": "The future of frontend and Drupal",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_speaker.html"
+    }
+  ],
+  "sessions" : [
+    {
+      "speaker": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Vivamus Magna Justo",
+      "title": "CSS and Accessibility",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Donec Sollicitudin",
+      "title": "Designing for Inclusivity",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Curabitur Aliquet",
+      "title": "Master SASS",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    },
+    {
+      "speaker": "Vivamus Magna Justo",
+      "title": "CSS and Accessibility",
+      "image": "http://via.placeholder.com/150x150",
+      "video": "/_session.html"
+    }
+  ]
+}

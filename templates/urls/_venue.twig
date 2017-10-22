@@ -1,0 +1,68 @@
+{% extends '../_layout.twig' %}
+
+{% block body %}
+<body class="{{ venue.class }}">
+<div class="background-image background-image-{{ venue.class }}"></div>
+{% endblock %}
+
+{% block hero %}
+
+  <div class="hero {{ venue.class }}">
+
+    <div class="hero__bgimage-overlay"></div>
+
+    <div class="hero__shape">
+
+      <div class="container">
+        <h1>{{ venue.title }}</h1>
+        <h3>{{ venue.subtitle }}</h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
+
+
+{% block content %}
+
+  <main id="content" class="container">
+
+    <div class="grid grid-100">
+
+      <section class="main grid-item">
+        <h2>Why Utrecht?</h2>
+        <p>Because Utrecht is one of the happiest places to be! The city embodies, ‘gezelligheid’, the core of Dutch culture. With its medieval centre, gabled merchants’ houses and cosmopolitan student population, Utrecht offers a laid-back alternative to Amsterdam. Unlike any other inner-canal city in the world, Utrecht has wharfs. The wharfs lead on to traditional cellars that have mostly been adapted to serve as bars and restaurants, which create wonderful café-lined canals. Utrecht is a slice of bohemia: a haven for everyone and anyone. No wonder Utrecht is nominated for European City of the Year Award 2018!
+        </p>
+        <p>Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+        </p>
+        <p>
+
+          Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+
+        </p>
+        <p>
+          Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.
+
+        </p>
+        <p>
+          Nulla porttitor accumsan tincidunt. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat. Donec sollicitudin molestie malesuada. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+
+        </p>
+        <p>
+          Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+{% endblock %}
+
+{% block speakers %}
+{% endblock %}
+
+{% block sponsors %}
+{% endblock %}

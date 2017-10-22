@@ -23,19 +23,19 @@
     background-size: auto 100%;
   }
 
-  &.background-image-one {
+  &.background-image-sessions-body {
     background-image: url(/assets/images/Hans-Splinter-open-monumentendag-2014.jpg);
   }
 
-  &.background-image-two {
+  &.background-image-speakers-body {
     background-image: url(/assets/images/Window-Utrecht-University.jpg);
   }
 
-  &.background-image-three {
+  &.background-image-sponsors-body {
     background-image: url(/assets/images/Channel-Cycle-Utrecht-Holland-House.jpg);
   }
 
-  &.background-image-four {
+  &.background-image-venue-body {
     background-image: url(/assets/images/Netherlands-Utrecht-Building-Street-Architecture.jpg);
   }
 
@@ -56,6 +56,7 @@
   @include medium {
     height: 90vh;
     align-items: flex-start;
+    margin: 0 auto;
   }
 
   @include large {
@@ -65,6 +66,7 @@
 
   .container {
     margin-top: 0rem;
+    max-width: 1024px;
     padding: 0 2rem;
     text-align: left;
     color: white;
@@ -81,6 +83,7 @@
 
     h1 {
       font-size: 2rem;
+      line-height: 1.2;
       font-weight: 700;
       text-align: left;
       margin-top: 3rem;
@@ -124,6 +127,7 @@
     h3 {
       font-weight: 700;
       font-size: 2rem;
+      line-height: 1.2;
       margin-top: 1rem;
       padding: 0;
       text-align: left;
@@ -131,7 +135,7 @@
 
       @include small {
         font-size: 2.25rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
         text-align: center;
       }
 
@@ -188,22 +192,22 @@
   }
 }
 
-.one .hero__shape {
+.sessions-body .hero__shape {
   opacity: 0.9;
   background-image: url(/assets/images/bg-canal.svg);
 }
 
-.two .hero__shape {
+.speakers-body .hero__shape {
   opacity: 0.9;
   background-image: url(/assets/images/bg-architecture.svg);
 }
 
-.three .hero__shape {
+.sponsors-body .hero__shape {
   opacity: 0.9;
   background-image: url(/assets/images/bg-buildings.svg);
 }
 
-.four .hero__shape {
+.venue-body .hero__shape {
   opacity: 0.9;
   background-image: url(/assets/images/bg-windows.svg);
 }

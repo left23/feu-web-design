@@ -1,0 +1,76 @@
+{% extends '../_layout.twig' %}
+
+{% block body %}
+<body class="{{ sponsors.class }}">
+<div class="background-image background-image-{{ sponsors.class }}"></div>
+{% endblock %}
+
+{% block hero %}
+
+  <div class="hero {{ sponsors.class }}">
+
+    <div class="hero__bgimage-overlay"></div>
+
+    <div class="hero__shape">
+
+      <div class="container">
+        <h1>{{ sponsors.title }}</h1>
+        <h3>{{ sponsors.subtitle }}</h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}
+{% block content %}
+
+  <main class="container">
+
+    <section class="sponsors sponsors-gold">
+
+      <div class="grid grid-100">
+
+        {% for sponsor in sponsors.sponsors__gold %}
+          {% include '../../components/03-molecules/sponsor/sponsor-gold.twig' %}
+        {% endfor %}
+
+      </div>
+
+    </section>
+
+    <section class="sponsors sponsors-silver">
+
+      <div class="grid grid-50">
+
+        {% for sponsor in sponsors.sponsors__silver %}
+          {% include '../../components/03-molecules/sponsor/sponsor-silver.twig' %}
+        {% endfor %}
+
+      </div>
+
+    </section>
+
+    <section class="sponsors">
+
+      <div class="grid grid-33">
+
+        {% for sponsor in sponsors.sponsors %}
+          {% include '../../components/03-molecules/sponsor/sponsor.twig' %}
+        {% endfor %}
+
+      </div>
+
+    </section>
+
+  </main>
+
+{% endblock %}
+
+
+{% block speakers %}
+{% endblock %}
+
+{% block sponsors %}
+{% endblock %}

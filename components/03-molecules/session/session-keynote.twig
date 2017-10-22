@@ -1,0 +1,9 @@
+{% if session.video %}
+  <a href="/_session.html" class="session__keynote">
+{% endif %}
+  <h2>{{ session.title }}</h2>
+  <img src="{{ session.image }}">
+  <h3>{{ session.speaker }}</h3>
+{% if session.video %}
+  </a>
+{% endif %}

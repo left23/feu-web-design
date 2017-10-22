@@ -1,0 +1,9 @@
+{% if speaker.url %}
+  <a href="/_speaker.html" class="speaker__keynote">
+{% endif %}
+  <h2>{{ speaker.title }}</h2>
+  <img src="{{ speaker.image }}">
+  <h3>{{ speaker.name }}</h3>
+{% if speaker.url %}
+  </a>
+{% endif %}

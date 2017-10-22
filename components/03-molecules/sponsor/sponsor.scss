@@ -1,0 +1,123 @@
+@import 'settings';
+
+.sponsors {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  > .grid {
+    padding: 0;
+  }
+
+  .grid {
+    @include small {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: center;
+      flex: 1 0 auto;
+    }
+
+    @include medium {
+      justify-content: space-between;
+    }
+
+    @include large {
+      padding-top: 1rem;
+    }
+
+  }
+
+}
+
+.sponsor {
+  background-color: white;
+  text-align: center;
+  margin: 0 0 1rem;
+  padding: 0 2rem;
+  text-decoration: none;
+
+  @include small {
+    display: flex;
+    flex: 0 0 49%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include medium {
+    flex: 0 0 32%;
+    justify-content: flex-end;
+    padding: 2rem;
+  }
+
+  &.sponsor-gold {
+
+    @include small {
+      flex: 0 0 100%;
+    }
+
+    @include medium {
+      flex: 0 0 100%;
+    }
+
+  }
+
+  &.sponsor-silver {
+
+    @include small {
+      flex: 0 0 100%;
+    }
+
+    @include medium {
+      flex: 0 0 49%;
+    }
+
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 0 1rem;
+    color: $brand-primary;
+  }
+
+}
+
+.theme-label {
+  background-color: lighten($brand-primary, 20%);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+.sponsors-block {
+  background: white;
+  color: $brand-primary;
+  margin-bottom: 8px;
+
+  .container {
+    margin: 0 auto;
+    padding: 4rem 0 8rem;
+  }
+
+  .sponsor {
+    margin: 0 0 0.5rem;
+    padding: 0;
+  }
+
+  .sponsors-block-title {
+    color: $brand-primary;
+    font-weight: 700;
+    margin: 1rem 0 2rem;
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+    //text-shadow: 4px 4px 0 $brand-primary;
+  }
+
+
+}

@@ -1,23 +1,26 @@
 @import "settings";
 
-body {
+body.home,
+body.session,
+body.sponsor-body,
+body.speaker {
   background-color: #DF5336;
   position: relative;
 }
 
-body.one {
+body.sessions-body {
   background-color: #6D2A79;
 }
 
-body.two {
+body.speakers-body {
   background-color: #6EC82C;
 }
 
-body.three {
+body.sponsors-body {
   background-color: #625A8A;
 }
 
-body.four {
+body.venue-body {
   background-color: #4EB9F7;
 }
 
@@ -28,7 +31,7 @@ body.four {
   width: 100%;
 
   @include medium {
-    max-width: 1024px;
+    max-width: 1600px;
   }
 }
 
@@ -49,7 +52,7 @@ main.container {
   margin-top: -18rem;
 
   @include medium {
-    padding: 1rem 3rem 3rem 4rem;
+    padding: 1rem 2rem 0;
     min-height: 100%;
     min-height: calc(100vh - 50px);
   }
@@ -58,26 +61,32 @@ main.container {
 .main {
   text-align: left;
   padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
   @include medium {
     padding: 2rem;
   }
 }
 
-
 .main {
   background-color: white;
 
   @include medium {
-    padding: 10rem 4rem 6rem 11rem;
+    padding: 10rem 16rem 4rem;
     background-color: transparent;
     background-image: url(/assets/images/shape.svg);
+    background-image: url(/assets/images/shape-backup.svg);
+    background-image: url(/assets/images/shape-lg.svg);
     background-position: 0 0;
     background-size: cover;
   }
 }
 
-.sidebar {
+.grid-100 .grid-item {
+  text-align: left;
+}
 
+.sidebar {
   background-color: white;
   margin: 0 0 2rem;
 
@@ -91,4 +100,131 @@ main.container {
     padding: 6rem 4rem 6rem 2rem;
     min-height: 90vh;
   }
+
+}
+
+
+.speaker {
+
+  .speaker-node {
+    background-color: white;
+    margin: 7rem auto 0;
+    max-width: 1024px;
+
+    @include medium {
+      padding: 2rem;
+      background-image: none;
+    }
+
+    img {
+      float: left;
+      margin: 0 1rem 1rem 0;
+      border-radius: 100%;
+      width: 160px;
+      height: 160px;
+      margin: 1rem auto 0;
+      z-index: 1;
+      border: 4px solid #DF5336;
+      padding: 2px;
+
+    }
+  }
+
+  main.container {
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 3;
+    margin-top: 0;
+
+    @include medium {
+      padding: 1rem 3rem 3rem 4rem;
+      min-height: unset;
+    }
+  }
+
+  aside {
+    background-color: white;
+    margin: 6rem 0 0;
+  }
+
+}
+
+
+.session {
+
+  .session-node {
+    background-color: white;
+    margin: 7rem auto 0;
+    max-width: 1024px;
+
+    @include medium {
+      padding: 2rem;
+      background-image: none;
+    }
+
+    img {
+      float: left;
+      margin: 0 1rem 1rem 0;
+      border-radius: 100%;
+      width: 160px;
+      height: 160px;
+      margin: 1rem auto 0;
+      z-index: 1;
+      border: 4px solid #DF5336;
+      padding: 2px;
+
+    }
+  }
+
+  main.container {
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 3;
+    margin-top: 0;
+
+    @include medium {
+      padding: 1rem 3rem 3rem 4rem;
+      min-height: unset;
+    }
+  }
+
+
+  aside {
+    background-color: white;
+    margin: 2rem 0 0;
+  }
+
+
+}
+
+
+.sponsor-body {
+
+  .sponsor-node {
+    background-color: white;
+    margin: 7rem auto 0;
+    max-width: 1024px;
+
+    @include medium {
+      padding: 2rem;
+      background-image: none;
+    }
+
+  }
+
+  main.container {
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 3;
+    margin-top: 0;
+
+    @include medium {
+      padding: 1rem 3rem 3rem 4rem;
+      min-height: unset;
+    }
+  }
+
 }

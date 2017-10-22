@@ -1,53 +1,9 @@
 {
-  "class": "home",
-  "title": "A non-profit, developer-first, community-focused conference.",
-  "date": "June 1-2<sup>nd</sup>",
+  "class": "sponsors-body",
+  "title": "Sponsors",
+  "subtitle": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "date": "Join us June 1-2<sup>nd</sup>",
   "location": "Utrecht, Netherlands",
-  "image": "http://via.placeholder.com/150x150",
-  "navigation" : [
-    {
-      "id": "sessions",
-      "title": "Sessions"
-    },
-    {
-      "id": "speakers",
-      "title": "Speakers"
-    },
-    {
-      "id": "sponsors",
-      "title": "Sponsors"
-    },
-    {
-      "id": "venue",
-      "title": "Venue"
-    }
-  ],
-  "speakers__keynote" : [
-    {
-      "name": "Donec Sollicitudin",
-      "title": "Designing for Inclusivity",
-      "image": "http://via.placeholder.com/150x150",
-      "url": "/_speaker.html"
-    },
-    {
-      "name": "Curabitur Aliquet",
-      "title": "Master SASS",
-      "image": "http://via.placeholder.com/150x150",
-      "url": "/_speaker.html"
-    },
-    {
-      "name": "Vivamus Magna Justo",
-      "title": "CSS and Accessibility",
-      "image": "http://via.placeholder.com/150x150",
-      "url": "/_speaker.html"
-    },
-    {
-      "name": "Nulla porttitor accumsan",
-      "title": "The future of frontend and Drupal",
-      "image": "http://via.placeholder.com/150x150",
-      "url": "/_speaker.html"
-    }
-  ],
   "sponsors__gold" : [
     {
       "name": "Donec Sollicitudin",

@@ -1,0 +1,16 @@
+{% if sponsor.url %}
+  <a href="/_sponsor.html" class="sponsor sponsor-gold">
+{% endif %}
+{% if sponsor.status %}
+  <div class="theme-label">{{ sponsor.status }}</div>
+{% endif %}
+{% if not sponsor.url %}
+  <h2>{{ sponsor.name }}</h2>
+{% endif %}
+  <img src="{{ sponsor.image }}">
+{% if sponsor.website %}
+  <h5>{{ sponsor.website }}</h5>
+{% endif %}
+{% if sponsor.url %}
+  </a>
+{% endif %}

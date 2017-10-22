@@ -1,0 +1,52 @@
+@import 'settings';
+
+.quick-links {
+  margin-bottom: 8px;
+
+  .container {
+    margin: 0 auto;
+    padding: 8rem 0 12rem;
+  }
+
+  .grid-item {
+    padding: 1rem 4rem;
+  }
+
+  .quick-links__container {
+    overflow: hidden;
+
+    @include medium {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 3rem;
+    }
+
+  }
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 0 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    min-height: 52px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 3px 3px 0 $brand-primary;
+  }
+
+  img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto 0;
+    z-index: 0;
+    border: 6px solid white;
+    padding: 4px;
+  }
+
+
+}

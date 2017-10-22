@@ -5,8 +5,15 @@
   margin-bottom: 1rem;
   background: rgba($brand-primary, 1);
 
+
   @include small {
     min-height: $navbar-height;
+  }
+
+  .container {
+    @include medium {
+      max-width: 1024px;
+    }
   }
 
   .navbar-logo {
